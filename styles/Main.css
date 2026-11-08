@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Headerh2';
+    src: url(/fonts/Redaction10-Bold.ttf);
+
+    font-family: 'Headerh3';
+    src: url(/fonts/Merriweather-Italic-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+.Main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Main-img-Scene1{
+    background-color: #F0EEEA;
+    display: flex;
+    justify-content: center;
+    position: relative;   
+    height: 918px;
+    width: 100%;
+    min-height: 0;
+}
+
+.Main-img1{
+    display: flex;
+    background-color: #F0EEEA;
+    border: 1px dashed black;
+    height: 100%;
+    width: calc(100% - 50px);
+}
+
+.Main-text1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    width: 880px;
+    height: 800px;
+}
+
+h1{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    font-family: 'Headerh2';
+    font-size: 75px;
+}
+
+p{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 600px;
+}
+
+.Main-Schedule1{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    width: 250px;
+    height: 45px;
+    background-color: rgb(56, 49, 49);
+}
+
+.apoints{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.Scene2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background-color: #D7D3CA;
+    position: relative;   
+    height: 800px;
+    width: 100%;
+    min-height: 0;
+}
+
+.Scene2-inline{
+    display: flex;
+    border: 1px dashed black;
+    width: calc(100% - 50px);
+    height: 100%;
+}
+
+.Scene2-texts{
+    width: calc(100% - 50%);
+    height: 100%;
+
+}
+.Scene2-p{
+    height: 400px;
+}
+
+.Scene2-schedule{
+    position: relative;
+    top: 65px;
+    left: 30px;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(56, 49, 49);
+}
+
+.Scene2-imgs{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.Scene2-img-lil{
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.dashed{
+    border-bottom: 1px dashed black;
+
+}
+.Scene2imsgs{
+    position: absolute;
+    top: 45px;
+    left: 100px;
+}
+
+.Scene2imsgs-1{
+    border-bottom: 1px solid black;
+}
+
+.Scene2-img-texts{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    left: 37%;
+    width: 50%;
+    height: 65%;
+}
+
+.Scene2-pTexts{
+    position: relative;
+    top: 25px;
+    left: 0px;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 500px;
+}
+
+h3{
+    font-family: 'Headerh3';
+    font-size: 40px;
+}
+
+.Scene3{
+    width: 100%;
+    height: 800px;
+}
+
+.Scene3-Bg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1136px;
+    background-image: url(https://static.wixstatic.com/media/c837a6_56f6d7f8528d42a2a568739d581799b9~mv2.jpg/v1/fill/w_1879,h_1142,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Notary_Recraft%20V4_2026-06-17_08-01-55%201.jpg);
+}
+
+.Scene3-Texts{
+    display: flex;
+    border: 1px dashed white;
+    width: calc(100% - 50px);
+    height: 100%;
+}
+
+.Scene3-1{
+    width: 50%;
+    height: 40%;
+}
+
+.Scene3-h1{
+    color: white;
+}
+
+.Scene3-2{
+    position: relative;
+    top: 500px;
+    width: 50%;
+    height: 55%;
+}
+
+.Scene3-p{
+    font-size: 35px;
+    top: 250px;
+    left: 250px;
+    width: 440px;
+    color: white;
+}
+
+ul{
+    font-family: sans-serif;
+    list-style: square;
+    position: relative;
+    top: 280px;
+    left: 250px;
+    width: 400px;
+    font-size: 32px;
+    color: white;
+}
