@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="Viewport" content="width=device-width-initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b60a616903.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/Reset.css">
     <link rel="stylesheet" href="./styles/Main.css">
-    <link rel="stylesheet" href="./styles/Header.css">
+    <link rel="stylesheet" href="./styles/HeaderFooter.css">
 </head>
 <body>
     <section class="Container-header">
@@ -21,6 +23,51 @@
                     <a href="">Services</a>
                     <a href="">Contact</a>
                 </div>
+                <div class="Navbar">
+                        <nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid">
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              Menu
+            </button>
+            <div class="menu">
+              <a class="menu-item" href="./Main.html">Home</a>
+              <a class="menu-item" href="#">Another action</a>
+              <hr class="menu-divider">
+              <a class="menu-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="hstack gap-2" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn-solid btn-icon theme-secondary" type="submit">
+            <svg class="bi" width="16" height="16"><use href="#search" /></svg>
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+                </div>
                 <div class="Header-User">
                     <i class="fa-solid fa-circle-user" style="color: rgb(71, 82, 101);"></i>
                     <a href="">Log in</a>
@@ -31,12 +78,12 @@
     <Section class="Main">
         <div class="Main-img-Scene1">
             <div class="Main-img1">
-                <img src="./images/Apartment.jpg" alt="Apartment">
+                <img class="img1" src="./images/Apartment.jpg" alt="Apartment">
                 <div class="Main-text1">
-                    <h1>
+                    <h1 class="Main-h1 C1h1">
                         Certified Notary Services You Can Trust
                     </h1>
-                    <p>
+                    <p class="C1p1">
                         Licensed professionals providing secure document authentication and witnessing for personal and business needs
                     </p>
                     <div class="Main-Schedule1">
@@ -65,22 +112,22 @@
                     <div class="Scene2-img-lil dashed">
                         <img class="Scene2imsgs" src="https://static.wixstatic.com/media/c837a6_73c7e512b8024094a0fcc85f65ba3879~mv2.jpg/v1/fill/w_205,h_133,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Notary_Gemini%203%20(Nano%20Banana%20Pro)_2026-06-17_07-54-21%201.jpg" alt="Scene2-1">
                         <div class="Scene2-img-texts">
-                            <h3>Individual Services</h3>
-                            <p class="Scene2-pTexts">We support key personal matters, including real estate transactions, estate planning, powers of attorney, affidavits, and certifications.</p>
+                            <h3 class="C2h3">Individual Services</h3>
+                            <p class="Scene2-pTexts C2p1">We support key personal matters, including real estate transactions, estate planning, powers of attorney, affidavits, and certifications.</p>
                         </div>
                     </div>
                     <div class="Scene2-img-lil dashed">
                         <img class="Scene2imsgs" src="https://static.wixstatic.com/media/c837a6_833ad97d9eb94295b41d4f8159ceb4b9~mv2.jpg/v1/crop/x_0,y_48,w_2048,h_1328/fill/w_205,h_133,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Notary_Recraft%20V4_2026-06-18_09-31-17%201.jpg" alt="Scene2-2">
                         <div class="Scene2-img-texts">
-                            <h3>Business Services</h3>
-                            <p class="Scene2-pTexts">We handle essential business documents, from contracts and resolutions to trademarks, exports, and agreements.</p>
+                            <h3 class="C2h3">Business Services</h3>
+                            <p class="Scene2-pTexts C2p1">We handle essential business documents, from contracts and resolutions to trademarks, exports, and agreements.</p>
                         </div>
                     </div>
                     <div class="Scene2-img-lil">
                         <img class="Scene2imsgs" src="https://static.wixstatic.com/media/c837a6_9dac2ad4f8654d488cf885557cf55a95~mv2.jpg/v1/fill/w_205,h_133,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Notary_Recraft%20V4_2026-06-17_08-46-42%202.jpg" alt="Scene2-3">
                         <div class="Scene2-img-texts">
-                            <h3>Specialized Certifications</h3>
-                            <p class="Scene2-pTexts">We certify documents for international, translated, and digital use.</p>
+                            <h3 class="C2h3">Specialized Certifications</h3>
+                            <p class="Scene2-pTexts C2p1">We certify documents for international, translated, and digital use.</p>
                         </div>
                     </div>
                 </div>
@@ -103,6 +150,82 @@
                 </div>
             </div>
         </div>
+        <div class="Scene4">
+            <div class="Scene4-Main">
+                <div class="Scene4-Header">
+                    <h1 class="Scene4-h1">Simple Three-Step Process</h1>
+                </div>
+                <div class="Scene4-Main-Div">
+                    <div class="Scene4-divs">
+                        <h3 class="Scene4-h3">Book Your Appointment</h3>
+                        <p class="Scene4-p">Select a convenient time for our professional notary services through our secure online portal or by phone.</p>
+                        <img class="Scene4-imgs" src="https://static.wixstatic.com/media/c837a6_679959bc9d044fd58d830c048de032cc~mv2.jpg/v1/crop/x_0,y_175,w_2048,h_1364/fill/w_490,h_326,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Notary_Recraft%20V4_2026-06-17_12-29-46%201.jpg" alt="SomeDude">
+                    </div>
+                    <div class="Scene4-divs">
+                        <h3 class="Scene4-h3">Bring Valid Identification</h3>
+                        <p class="Scene4-p">Present your government-issued photo ID and all unsigned documents requiring authentication or witnessing.</p>
+                        <img class="Scene4-imgs" src="https://static.wixstatic.com/media/c837a6_1f5ad62389e441148a5337723ea09017~mv2.jpg/v1/fill/w_490,h_326,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Notary_Recraft%20V4_2026-06-17_12-33-31%201.jpg" alt="Hands">
+                    </div>
+                    <div class="Scene4-divs">
+                        <h3 class="Scene4-h3">Receive Certified Notarization</h3>
+                        <p class="Scene4-p">Obtain your legally binding, certified documents ready for submission to any court or regulatory body.</p>
+                        <img class="Scene4-imgs" src="https://static.wixstatic.com/media/c837a6_f6be37e939c44fee95977c9744cd6a05~mv2.jpg/v1/fill/w_490,h_326,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Notary_Recraft%20V4_2026-06-17_12-44-34%201.jpg" alt="papers">
+                    </div>
+                </div>
+                <div class="Scene4-Carousel">
+                    <div class="Scene4-CHeader">
+                        <h1>Testimonials</h1>
+                        <p class="Scene4-Cheader-p">Real experiences from clients who trusted us with their documents</p>
+                    </div>
+                    <div class="Carousel">
+                        <div id="carouselStackedIndicators" class="carousel slide">
+  <div class="carousel-inner rounded-5">
+    <div class="carousel-item active c1">
+      <img class="Carousell-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZdIpujS5DP_lUeIh60uVkVIytTSFMqCx8K5P8tYDEgA&s=10" class="d-block w-100" alt="oldppl">
+    </div>
+    <div class="carousel-item c1">
+      <img class="Carousell-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD6YCPASrwn6X7QsNjEIGmC4cALN-6VMd7NLcdMgC5cg&s=10" class="d-block w-100" alt="stamp">
+    </div>
+    <div class="carousel-item c1">
+      <img class="Carousell-img" src="https://media.istockphoto.com/id/2155635412/photo/unknown-businessman-not-signing-paperwork.jpg?s=612x612&w=0&k=20&c=L2rNViG9HJuBWMMeuGADx6dG6GcBgiVyhmcy33DMvzI=" class="d-block w-100" alt="idk">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="prev">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="next">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </Section>
+    <section class="Container-Footer">
+        <div class="Footer-Main">
+            <p class="Footer-p">500 Terry Francine St San Francisco, CA 94158</p>
+        </div>
+        <div class="Footer-Main2">
+            <a class="fA1" href="./Privacypolicy.html">Privacy Policy</a>
+            <a class="fA1" href="./Accessibility.html">Accessibility Statement</a>
+            <a class="fA1" href="./Terms.html">Terms & Conditions</a>
+            <a class="fA1" href="./Refund.html">Refund Policy</a>
+        </div>
+    </section>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+
 </body>
 </html>

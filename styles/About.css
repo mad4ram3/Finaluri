@@ -1,0 +1,59 @@
+.About-Main{
+    background-color: #F0EEEA;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.About-Main2{
+    width: calc(100% - 50px);
+    height: auto;
+    border: 1px dashed black;
+}
+
+h3{
+    position: relative;
+    left: 30px;
+}
+
+p{
+    max-width: 1000px;
+    width: 80%;
+    height: auto;
+}
+
+ul{
+    max-width: 1000px;
+    width: 80%;
+    height: auto;
+    font-size: 25px;
+    top: 85px;
+    left: 50px;
+}
+
+li{
+    color: rgb(61, 61, 61);
+    list-style: circle;
+    max-width: 1000px;
+    height: auto;
+
+}
+
+.Texts1{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.Big{
+    width: 400px;
+    height: auto;
+}
+
+.mini{
+    height: auto;
+    width: 100%;
+    margin-bottom: 60px;
+}

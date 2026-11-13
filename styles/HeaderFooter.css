@@ -1,0 +1,214 @@
+.Container-header{
+    overflow: hidden;
+    position: relative;
+    max-height: 107px;
+    width: 100%;
+    height: 107px;
+    background-color: #F0EEEA;
+}
+
+.Main-header{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.Inline{
+    background-color: white;
+    position: relative;
+    left: 0;
+    display: flex;
+    border: 1px dashed black;
+    width: calc(100% - 45px);
+    height: calc(100% - 30px);
+}
+
+.Header-img{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 20px;
+    left: 20px;
+    width: 400px;
+    height: 70px;
+}
+
+.Header-inline-img{
+    height: 50px;
+    width: 160px;
+}
+
+.Header-Buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    top: 22px;
+    width: 1090px;
+    height: 40px;
+}
+
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-size: 25px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.Header-User{
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 170px ;
+    top: 4px;
+    width: 160px;
+    height: 60px;
+}
+
+.svg-inline--fa{
+    width: 75px;
+    height: 50px;
+}
+
+.Container-Footer{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
+}
+
+.Footer-Main{
+    display: flex;
+    justify-content: center;
+    background-color: #D7D3CA;
+    width: 100%;
+    height: 150px;
+}
+
+.Footer-p{
+    text-align: center;
+    width: 300px;
+    max-height: 100px;
+    left: 0;
+    font-size: 25px;
+}
+
+.Footer-Main2{
+    display: flex;
+    gap: 20px;
+    background-color: #D7D3CA;
+    width: 100%;
+    height: 50px;
+}
+
+.Navbar{
+    width: 250px;
+    height: 40px;
+    display: none;
+}
+
+.menu-item{
+    color: white;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.navbar-toggler-icon{
+    position: relative;
+    top: 10px;
+    color: black;
+}
+
+@media screen and (max-width: 1850px) {
+    .Header-Buttons{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1770px) {
+    .Header-Buttons{
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1660px) {
+    .Header-Buttons{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    .Header-Buttons{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .Header-Buttons{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .Header-Buttons{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .Header-Buttons{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .Header-Buttons{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .Header-Buttons{
+        pointer-events: none;
+        opacity: 0;
+        user-select: none;
+        width: 0;
+        display: none;
+    }
+
+    .Navbar{
+        display: block;
+    }
+
+    .Header-User{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Header-img{
+        width: 1000px;
+    }
+
+    .fA1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .fA1{
+        font-size: 12px;
+    }
+}
+
