@@ -8,10 +8,10 @@
 
 .Main{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     height: auto;
-    flex: 1;
 }
 
 .Main-img-Scene1{
@@ -89,8 +89,8 @@ p{
     justify-content: center;
     background-color: #D7D3CA;
     position: relative;   
-    max-height: 800px;
-    height: 100%;
+    min-height: 800px;
+    height: auto;
     width: 100%;
     min-height: 0;
 }
@@ -99,39 +99,50 @@ p{
     display: flex;
     border: 1px dashed black;
     width: calc(100% - 50px);
-    height: 100%;
+    min-height: 800px;
+    height: auto;
 }
 
 .Scene2-texts{
     width: calc(100% - 50%);
-    height: 100%;
+    min-height: 530px;
+    height: auto;
 
 }
 .Scene2-p{
     height: 400px;
 }
 
+.p2{
+    padding-right: 35px;
+    width: auto; 
+}
+
 .Scene2-schedule{
     position: relative;
-    top: 65px;
+    bottom: -70px;
     left: 30px;
-    width: 400px;
-    height: 50px;
+    max-width: 400px;
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
     background-color: rgb(56, 49, 49);
 }
 
 .Scene2-imgs{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
     width: 50%;
-    height: 100%;
+    height: auto;
 }
 
 .Scene2-img-lil{
     position: relative;
+    display: flex;
     width: 100%;
-    height: 60%;
+    min-height: 33.3%;
+    height: auto;
 }
 
 .dashed{
@@ -139,9 +150,13 @@ p{
 
 }
 .Scene2imsgs{
-    position: absolute;
+    position: relative;
     top: 45px;
     left: 100px;
+    max-width: 203px;
+    width: 100%;
+    max-height: 133px;
+    height: auto;
 }
 
 .Scene2imsgs-1{
@@ -152,19 +167,20 @@ p{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 30px;
-    left: 37%;
+    top: 45px;
+    left: 15%;
     width: 50%;
     height: 65%;
 }
 
 .Scene2-pTexts{
     position: relative;
-    top: 25px;
+    top: 10px;
     left: 0px;
     font-family: sans-serif;
-    font-size: 25px;
-    width: 500px;
+    font-size: 23px;
+    width: auto;
+    padding-right: 20px;
 }
 
 h3{
@@ -174,6 +190,8 @@ h3{
 }
 
 .Scene3{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-height: 1136px;
     height: 100%;
@@ -185,6 +203,9 @@ h3{
     justify-content: center;
     width: 100%;
     height: 1136px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(https://static.wixstatic.com/media/c837a6_56f6d7f8528d42a2a568739d581799b9~mv2.jpg/v1/fill/w_1879,h_1142,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Notary_Recraft%20V4_2026-06-17_08-01-55%201.jpg);
 }
 
@@ -215,7 +236,8 @@ h3{
     font-size: 35px;
     top: 250px;
     left: 250px;
-    width: 440px;
+    max-width: 440px;
+    width: auto;
     color: white;
 }
 
@@ -236,15 +258,15 @@ ul{
     justify-content: center;
     background-color: #F0EEEA;
     width: 100%;
-    max-height: 1500px;
     height: auto;
     min-height: 0;
 }
 
 .Scene4-Main{
     width: calc(100% - 50px);
-    height: 100%;
+    height: auto;
     border: 1px dashed black;
+    height: auto;
 }
 
 .Scene4-Header{
@@ -264,13 +286,14 @@ ul{
     display: flex;
     gap: 10px;
     width: 100%;
-    height: 695px;
+    min-height: 695px;
+    height: auto;
 }
 
 .Scene4-divs{
     background-color: #D7D3CA;
     width: 35%;
-    height: 100%;
+    overflow: hidden;
 }
 
 .Scene4-h3{
@@ -291,10 +314,13 @@ ul{
 }
 
 .Scene4-Carousel{
+    border-bottom: 1px dashed black;
     display: flex;
     position: relative;
     top: 5px;
     gap: 15px;
+    width: 100%;
+    height: auto;
 }
 
 .Scene4-CHeader{
@@ -328,34 +354,39 @@ ul{
     height: auto;
 }
 
+.Carousel-5{
+    width: 100%;
+    height: auto;
+    background-color: #D7D3CA;
+}
+
 
 @media screen and (max-width: 1710px) {
     .Main-h1{
         max-width: 700px;
     }
-    
-    .C2h3{
-        position: relative;
-        left: 20px;
-    }
 }
 
 @media screen and (max-width: 1600px){
-    .C2h3{
-        left: 40px;
-    }
+
 }
 
 @media screen and (max-width: 1420px){
-    .C2h3{
-        left: 60px;
+    .Scene3-2{
+        right: 200px;
+    }
+
+    .Scene4-p{
+        max-width: 300px;
     }
 }
 
 @media screen and (max-width: 1350px){
-    .C2h3{
-        left: 100px;
+
+    .Scene2-img-texts{
+        left: 18%;
     }
+
 }
 
 @media screen and (max-width: 1200px){
@@ -371,13 +402,32 @@ ul{
         max-width: 800px;
     }
 
-    .C2h3{
-        left: 120px;
-        font-size: 35px;
+    .Scene2-texts{
+        width: 100%;
     }
 
+    .Scene2-imgs{
+        width: 100%;
+        height: auto;
+        min-height: 1000px;
+    }
+
+    .Scene2-p{
+        height: 130px;
+    }
+
+
     .Scene2-inline{
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .Scene4-CHeader{
+        display: none;
+    }
+
+    .Carousel{
+        width: 99%;
+        margin-left: 5px;
     }
 }
 
@@ -386,12 +436,48 @@ ul{
         width: 111%;
         right: 100px;
     }
+    
+    .Scene2imsgs{
+        top: 75px;
+        left: 178px;
+    }
+
+    .Scene3-2{
+        right: 400px;
+    }
+
+    .Scene4-p{
+        max-width: 200px;
+    }
 }
 
 @media screen and (max-width: 760px){
     .C1h1{
         font-size: 60px;
     }
+
+    .Scene2-img-texts{
+        left: 25%;
+    }
+
+    .Scene4-Main-Div{
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .Scene4-p{
+        display: none;
+    }
+
+    .Scene4-divs{
+        width: 90%;
+    }
+
+    .Scene4-imgs{
+        left: 45px;
+        top: 60px;
+    }
+
 }
 
 @media screen and (max-width: 650px){
@@ -403,11 +489,65 @@ ul{
         font-size: 20px;
         max-width: 450px;
     }
+
+    .Scene2-img-lil{
+        flex-direction: column;
+    }
+
+    .H1-S2{
+        font-size: 63px;
+        margin-right: 25px;
+    }
+
+    .Scene2-img-texts{
+        top: 90px;
+    }
+
+    .Scene2-pTexts{
+        padding-bottom: 200px;
+    }
+
+    .C2h3{
+        font-size: 33px;
+    }
+
+    .Scene3-h1{
+        font-size: 45px;
+    }
+
+    .Scene3-2{
+        right: 85%;
+        top: 200px;
+    }
+
+    .Scene4-h1{
+        font-size: 70px;
+        padding-right: 50px;
+    }
 }
 
 @media screen and (max-width: 520px){
     .C1p1{
         max-width: 250px;
+    }
+
+    .Scene2-img-texts{
+        left: 50%;
+    }
+
+    .Scene4-imgs{
+        left: -30px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .H1-S2{
+        font-size: 54px;
+    }
+    
+    .Scene2-schedule{
+        width: 55%;
+        max-height: 80px;
     }
 }
 
@@ -426,5 +566,32 @@ ul{
 
     .Main-text1{
         gap: 10px;
+    }
+
+    .H1-S2{
+        font-size: 33px;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .Scene2-texts{
+        min-height: 620px;
+    }
+
+    .Scene2imsgs{
+        left: 120px;
+    }
+
+    .Scene3-2{
+        right: 134%;
+    }
+
+    .Scene4-imgs{
+        left: -120px;
+    }
+
+    .Scene4-h1{
+        top: 5px;
     }
 }

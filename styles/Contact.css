@@ -1,0 +1,117 @@
+.Contact-Main{
+    background-color: #F0EEEA;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.Main2{
+    width: calc(100% - 50px);
+    height: auto;
+    border: 1px dashed black;
+}
+
+.Hours{
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    display: flex;
+}
+
+.H1-hours{
+    min-height: 60px;
+}
+
+.Days{
+    display: flex;
+    flex-direction: row;
+}
+
+.Days1{
+    width: 50%;
+    height: auto;
+}
+
+.Days2{
+    width: 50%;
+    height: auto;
+}
+
+.H1{
+    width: 50%;
+    height: auto;
+}
+
+.Hours-text{
+    gap: 20px;
+    width: 50%;
+    height: auto;
+}
+
+.Contact-img{
+    width: 100%;
+    height: auto;
+}
+
+h3{
+    position: relative;
+    left: 30px;
+}
+
+p{
+    max-width: 1000px;
+    width: 80%;
+    height: auto;
+    min-height: 50px;
+}
+
+.Hourse-Footer{
+    width: 100%;
+    margin-top: 60px;
+    height: auto;
+}
+
+.Contact-Form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+label{
+    color: black;
+}
+
+.img{
+    width: 50%;
+    height: auto;
+}
+
+.form{
+    width: 50%;
+    height: auto;
+}
+
+.form2{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.Name{
+    display: flex;
+}
+
+.Email{
+    display: flex;
+}
+
+.Doc{
+    display: flex;
+}
+
+.Notes{
+    display: flex;
+}
